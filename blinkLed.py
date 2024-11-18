@@ -1,0 +1,21 @@
+import gpiozero
+import time
+ledr=gpiozero.LED(17)
+ledg=gpiozero.LED(4)
+ledb=gpiozero.LED(2)
+ledy=gpiozero.LED(3)
+while True:
+    ledr.on()
+    ledg.off()
+    ledb.off()
+    ledy.off()
+    time.sleep(1)
+    ledr.off()
+    ledg.on()
+    time.sleep(1)
+    ledg.off()
+    ledb.on()
+    time.sleep(1)
+    ledb.off()
+    ledy.on()
+    time.sleep(1)
